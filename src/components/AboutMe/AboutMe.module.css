@@ -1,0 +1,39 @@
+.wrapper{
+  width: 100%;
+  height: 700px;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+.columns{
+  margin: 20px 0;
+  text-align: center;
+  display: block;
+  width: 50%;
+  border-top: 3px solid grey;
+  padding-top: 20px;
+}
+
+.column1{
+
+}
+
+.column2{
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.wrapper h1 {
+  font-size: 50px;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 0;
+}
+
+.wrapper h2 {
+  font-size: 20px;
+  color: rgb(60, 60, 60);
+  margin: 20px 0 0 0;
+}

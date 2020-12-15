@@ -1,0 +1,49 @@
+.imageBox {
+  position: relative;
+  height:300px;
+  width:300px;
+  margin-top: 20px;
+}
+
+.projectImage{
+  height: 100%;
+  width: 300px;
+  display: block;
+}
+
+.overlay{
+  position: absolute;
+ top: 0;
+ bottom: 0;
+ left: 0;
+ right: 0;
+ height: 100%;
+ width: 100%;
+ opacity: 0;
+ transition: .5s ease;
+ background-color: pink;
+}
+
+.imageBox:hover .overlay {
+  opacity: 0.5;
+}
+
+.imageBox:hover .projectImage {
+  opacity: 0.5;
+}
+
+.imageHover {
+  height:300px;
+  width: 300px;
+  position: relative;
+  background: pink;
+  padding-top: 10px;
+}
+
+.projectTitle{
+  text-align: center;
+}
+
+.description{
+  transition: .5s ease;
+}
