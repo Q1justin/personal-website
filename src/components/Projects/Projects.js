@@ -5,7 +5,7 @@ import Project from './Project/Project';
 import test1 from '../../img/pokemon4.jpg';
 import test2 from '../../img/pokemon3.jpg';
 
-const projects = () => {
+const projects = (props) => {
   const projectList = [
     {
       name: "Test Name",
@@ -60,7 +60,7 @@ const projects = () => {
   }
 
   return (
-    <div className = {classes.wrapper}>
+    <div className = {classes.wrapper} id = {props.id}>
       <h1 className = {classes.title}>Projects</h1>
       <h2 className = {classes.introduction}>Here's What I Have Been Doing</h2>
       {projectDisplay}
