@@ -1,39 +1,56 @@
-import React from 'react';
-import { Link, animateScroll as scroll } from "react-scroll";
+import React, {Component} from 'react';
+import { Link} from "react-scroll";
 import classes from "./ScrollBar.module.css";
 
-const scrollBar = () => {
-  return(
-    <div className = {classes.navBar}>
-      <Link
-        activeClass="active"
-        to="AboutMe"
-        spy={true}
-        smooth={true}
-        duration={500}
-      >
-      About Me
-      </Link>
-      <Link
-        activeClass="active"
-        to="Projects"
-        spy={true}
-        smooth={true}
-        duration={500}
-      >
-      Projects
-      </Link>
-      <Link
-        activeClass="active"
-        to="ContactBar"
-        spy={true}
-        smooth={true}
-        duration={500}
-      >
-      Contacts
-      </Link>
-    </div>
-  )
+class ScrollBar extends Component {
+  state = {
+    selectedComponent: ""
+  }
+
+ setActiveComponent = (component) => {
+  this.setState({selectedComponent: component})
 }
 
-export default scrollBar;
+  render(){
+    return(
+      <div className = {classes.navBar}>
+        <Link
+          activeClass="active"
+          to="AboutMe"
+          spy={true}
+          smooth={true}
+          duration={500}
+          onSetActive = {() => this.setActiveComponent("AboutMe")}
+          /*Determine if active status*/
+          className = {this.state.selectedComponent == "AboutMe" ? classes.active: classes.navLink}
+        >
+        <p>About Me</p>
+        </Link>
+        <Link
+          activeClass="active"
+          to="Projects"
+          spy={true}
+          smooth={true}
+          duration={500}
+          onSetActive = {() => this.setActiveComponent("Projects")}
+          className = {this.state.selectedComponent == "Projects" ? classes.active: classes.navLink}
+        >
+        <p>Projects</p>
+        </Link>
+        <Link
+          activeClass="active"
+          to="ContactBar"
+          spy={true}
+          smooth={true}
+          duration={500}
+          onSetActive = {() => this.setActiveComponent("ContactBar")}
+          className = {this.state.selectedComponent == "ContactBar" ? classes.active: classes.navLink}
+        >
+        <p>Contacts</p>
+        </Link>
+      </div>
+    )
+  }
+}
+
+export default ScrollBar;
