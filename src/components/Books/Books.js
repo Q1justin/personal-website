@@ -1,5 +1,4 @@
 import React from 'react';
-import Columns from 'react-columns';
 
 const books = () => {
   return (

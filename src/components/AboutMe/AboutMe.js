@@ -2,11 +2,10 @@ import React from 'react';
 import classes from './AboutMe.module.css';
 import Columns from 'react-columns';
 import profilePicture from '../../img/pokemon2.png';
-import LineBreak from '../../UI/LineBreak/LineBreak';
 
-const aboutMe = () => {
+const aboutMe = (props) => {
   return (
-    <div className = {classes.wrapper}>
+    <div className = {classes.wrapper} id = {props.id}>
       <h1>About Me</h1>
       <h2>Making Progress Step By Step</h2>
       <Columns columns="3" className = {classes.columns}>

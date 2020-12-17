@@ -1,6 +1,5 @@
 import React from 'react';
 import classes from "./Projects.module.css";
-import Columns from 'react-columns';
 import Project from './Project/Project';
 import test1 from '../../img/pokemon4.jpg';
 import test2 from '../../img/pokemon3.jpg';

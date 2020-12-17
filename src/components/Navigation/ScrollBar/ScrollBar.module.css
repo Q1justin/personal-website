@@ -1,2 +1,29 @@
 .navBar{
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  margin:3px 0;
+  width: 10%;
+  border-radius: 5px;
+  background-color: black;
+  z-index: 100;
+
+}
+.navLink{
+  height: 80px;
+  width: 100%;
+  text-align: center;
+  color:white;
+  border-radius: 5px;
+
+}
+
+.active{
+  height: 80px;
+  width: 100%;
+  text-align: center;
+  color:white;
+  background-color: #22A39F;
+  border-radius: 5px;
+
 }
