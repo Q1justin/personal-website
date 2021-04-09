@@ -1,29 +1,47 @@
-.wrapper{
-  position: relative;
-}
-
-.homeImage{
-  margin-bottom: 0px;
-  display: block;
-  height: 805px;
-  opacity: 0.7;
-  z-index: 2;
-}
-
-.nameText{
-  position: absolute;
-  text-align: center;
-  width:100%;
-  margin: 200px 0;
+h1{
   font-size: 70px;
-  z-index: 10;
+  text-align: center;
+  margin-bottom: 0;
 }
 
-.otherText{
-  position: absolute;
-  text-align: center;
-  width:100%;
-  margin: 300px 0;
-  font-size: 30px;
-  z-index: 10;
+h2{
+  font-size: 40px;
+  text-align: end;
+}
+
+button{
+  transition-duration: 0.4s;
+  border-radius: 5px;
+  background-color: white;
+  color: black;
+  border: 2px solid #8299F2;
+  height: 50px;
+  width: 100px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #8299F2;
+  color: white;
+}
+
+.home{
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 750px;
+}
+
+.welcomeText{
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+
+.buttonContainer{
+  display: flex;
+  justify-content: flex-end;
+  width: 80%;
 }

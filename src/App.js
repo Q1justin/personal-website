@@ -8,14 +8,9 @@ import ScrollBar from './components/Navigation/ScrollBar/ScrollBar';
 
 function App() {
   return (
-    <div>
-    <ScrollBar/>
-    <TestContainer />
-        <WelcomePage id = "WelcomePage" />
-        <AboutMe id = "AboutMe" />
-        <Projects id = "Projects"/>
-        <ContactBar id = "ContactBar" />
-    </div>
+    <body>
+      <WelcomePage />
+    </body>
   );
 }
 

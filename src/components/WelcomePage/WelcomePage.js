@@ -1,15 +1,20 @@
-import React from 'react';
+import React, {Component} from 'react';
 import classes from './WelcomePage.module.css';
-import pokemon from '../../img/website.png';
 
-const welcome = () => {
-  return (
-    <div className = {classes.wrapper}>
-      <h1 className={classes.nameText}>Justin Do</h1>
-      <h3 className={classes.otherText}>Slow But Steady Progress</h3>
-      <img src={pokemon} className={classes.homeImage} />
-    </div>
-  )
+class WelcomePage extends Component{
+  render(){
+    return (
+      <section className = {classes.home}>
+        <div className = {classes.welcomeText}>
+          <h1>Hi, My Name Is Gyuwon Do</h1>
+          <h2>안녕하세요, 도규원입니다</h2>
+        </div>
+        <div className={classes.buttonContainer}>
+          <button>Click Me!</button>
+        </div>
+      </section>
+    )
+  }
 }
 
-export default welcome;
+export default WelcomePage;
