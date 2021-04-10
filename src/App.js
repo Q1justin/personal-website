@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import './App.css';
 import WelcomePage from './components/WelcomePage/WelcomePage';
-import AboutMe from './components/AboutMe/AboutMe';
+// import AboutMe from './components/AboutMe/AboutMe';
 import NavBar from './components/NavBar/NavBar';
-// import Projects from './components/Projects/Projects';
+import Projects from './components/Projects/Projects';
 // import TestContainer from './containers/TestContainer';
 
 class App extends Component {
@@ -18,6 +18,7 @@ class App extends Component {
     })
     setTimeout(function() {
         this.setState({showDiv: true})
+    /*Delay for animation on WelcomePage to finish*/
     }.bind(this), 1700)
   }
 
@@ -29,7 +30,7 @@ class App extends Component {
         </div>
         <div style={this.state.showDiv ? {} : { display: `none` }}>
           <NavBar />
-          <AboutMe />
+          <Projects />
         </div>
       </div>
     )

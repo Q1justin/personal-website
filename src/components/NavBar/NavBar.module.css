@@ -2,7 +2,6 @@ ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  overflow: hidden;
   background-color: #FDECEC;
 }
 
@@ -27,6 +26,8 @@ li a:hover:not(.active) {
 	animation-iteration-count: 1;
 	animation-timing-function: ease-in;
 	animation-duration: 1s;
+  animation-delay: 0s;
+  position: fixed;
 }
 
 @keyframes navBarFade {
