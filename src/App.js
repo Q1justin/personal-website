@@ -1,17 +1,36 @@
 import React, { Component } from 'react';
 import './App.css';
-// import ContactBar from './components/Navigation/ContactBar/ContactBar';
 import WelcomePage from './components/WelcomePage/WelcomePage';
-// import AboutMe from './components/AboutMe/AboutMe';
+import AboutMe from './components/AboutMe/AboutMe';
+import NavBar from './components/NavBar/NavBar';
 // import Projects from './components/Projects/Projects';
 // import TestContainer from './containers/TestContainer';
-// import ScrollBar from './components/Navigation/ScrollBar/ScrollBar';
 
 class App extends Component {
+  state = {
+    isClicked: false,
+    showDiv: false
+  }
+
+  handleInitialClick(){
+    this.setState({
+      isClicked: true
+    })
+    setTimeout(function() {
+        this.setState({showDiv: true})
+    }.bind(this), 1700)
+  }
+
   render(){
     return (
       <div>
-        <WelcomePage />
+        <div style={this.state.showDiv ? { display: `none` } : {}}>
+          <WelcomePage isClicked = {this.state.isClicked} handleClick = {() => this.handleInitialClick()}/>
+        </div>
+        <div style={this.state.showDiv ? {} : { display: `none` }}>
+          <NavBar />
+          <AboutMe />
+        </div>
       </div>
     )
   }
