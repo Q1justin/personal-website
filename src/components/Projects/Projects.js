@@ -1,27 +1,22 @@
 import React from 'react';
 import classes from "./Projects.module.css";
 import Project from './Project/Project';
-import test1 from '../../img/pokemon4.jpg';
-import test2 from '../../img/pokemon3.jpg';
 
 const projects = (props) => {
   const projectList = [
     {
       name: "Optimize Airport Control",
       description: "Under Works",
-      image: test1,
       date: null
     },
     {
       name: "Tration",
       description: "Track Your Health Easily",
-      image:test2,
       date: null
     },
     {
       name: "Covid Tracker",
       description: "Track Covid Globally",
-      image:test2,
       date: null
     },
   ];
@@ -30,6 +25,16 @@ const projects = (props) => {
   return (
     <div className = {classes.wrapper} id = {props.id}>
       <div className = {classes.projectTop}>
+        <div className = {classes.introText}>
+          <h1>Slow But Steady</h1>
+          <h2>The goal is to continue</h2>
+        </div>
+        <div className = {classes.radioContainer}>
+          <div className = {classes.colorBox}></div>
+          <div className = {classes.colorBox}></div>
+          <div className = {classes.colorBox}></div>
+          <div className = {classes.colorBox}></div>          
+        </div>
       </div>
     </div>
   )

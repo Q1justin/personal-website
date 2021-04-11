@@ -8,8 +8,8 @@ import Projects from './components/Projects/Projects';
 
 class App extends Component {
   state = {
-    isClicked: false,
-    showDiv: false
+    isClicked: true,
+    showDiv: true
   }
 
   handleInitialClick(){
