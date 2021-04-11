@@ -30,10 +30,14 @@ const projects = (props) => {
           <h2>The goal is to continue</h2>
         </div>
         <div className = {classes.radioContainer}>
-          <div className = {classes.colorBox}></div>
-          <div className = {classes.colorBox}></div>
-          <div className = {classes.colorBox}></div>
-          <div className = {classes.colorBox}></div>          
+          <div className = {classes.colorContainer}>
+            <div className = {classes.colorBox}></div>
+            <div className = {classes.colorBox}></div>
+          </div>
+          <div className = {classes.colorContainer}>
+            <div className = {classes.colorBox}></div>
+            <div className = {classes.colorBox}></div>
+          </div>          
         </div>
       </div>
     </div>
