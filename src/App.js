@@ -17,8 +17,7 @@ class App extends Component {
       isClicked: true
     })
     setTimeout(function() {
-        this.setState({showDiv: true})
-    /*Delay for animation on WelcomePage to finish*/
+        this.setState({showDiv: true});
     }.bind(this), 1700)
   }
 
